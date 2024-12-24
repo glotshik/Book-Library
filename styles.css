@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.btn-important {
+  font-size: 16px;
+  width: 120px;
+  background-color: #ff0000;
+  color: purple;
+}
+
+.btn-unimportant {
+  font-size: 14px;
+  width: 100px;
+  background-color: #ccc;
+  color: purple;
+}
+
+.btn-warning {
+  font-size: 18px;
+  width: 150px;
+  background-color: #ffcc00;
+  color: purple;
+}
+
+h6 {
+  font-size: 100%;
+}
+
+h7 {
+  font-size: 105%;
+}
+
+h8 {
+  font-size: 110%;
+}
+
+h9 {
+  font-size: 115%;
+}
+
+h10 {
+  font-size: 120%;
+}
+
+.day-Monday {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.day-Tuesday {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.day-Wednesday {
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+.day-Thursday {
+  color: #673ab7;
+  font-weight: bold;
+}
+
+.day-Friday {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.day-Saturday {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.day-Sunday {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.font1 {
+  font-weight: 100;
+}
+
+.font2 {
+  font-weight: 200;
+}
+
+.font3 {
+  font-weight: 300;
+}
+
+.font4 {
+  font-weight: 400;
+}
+
+.font5 {
+  font-weight: 500;
+}
+
+.font6 {
+  font-weight: 600;
+}
+
+.font7 {
+  font-weight: 700;
+}
+
+.font8 {
+  font-weight: 800;
+}
+
+.font9 {
+  font-weight: 900;
+}
+
+.font10 {
+  font-weight: 1000;
+}
+
+.team-Duke {
+  color: #001a57;
+}
+
+.team-Gonzaga {
+  color: #002855;
+}
+
+.team-Kansas {
+  color: #0051ba;
+}
+
+.team-Baylor {
+  color: #00543f;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+  content: "🌸";
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */

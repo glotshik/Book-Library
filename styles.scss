@@ -1,0 +1,103 @@
+// Question 1 
+
+
+@mixin btn($name, $font-size, $width, $bg-color) {
+  .btn-#{$name} {
+    font-size: $font-size;
+    width: $width;
+    background-color: $bg-color;
+    color: purple;
+  }
+}
+
+@include btn("important", 16px, 120px, #ff0000);
+@include btn("unimportant", 14px, 100px, #ccc);
+@include btn("warning", 18px, 150px, #ffcc00);
+
+// Question 2
+
+$font-sizes: (100%, 105%, 110%, 115%, 120%, 135%, 140%);
+
+@mixin heading-sizes($level) {
+  $size: nth($font-sizes, $level - 5);
+  h#{$level} {
+    font-size: $size;
+  }
+}
+
+@include heading-sizes(6);
+@include heading-sizes(7);
+@include heading-sizes(8);
+@include heading-sizes(9);
+@include heading-sizes(10);
+
+
+// Question 3
+
+
+$days: (
+  "Monday" #f44336,
+  "Tuesday" #e91e63,
+  "Wednesday" #9c27b0,
+  "Thursday" #673ab7,
+  "Friday" #3f51b5,
+  "Saturday" #2196f3,
+  "Sunday" #00bcd4
+);
+
+@each $day, $color in $days {
+  .day-#{$day} {
+    color: $color;
+    font-weight: bold;
+  }
+}
+
+// Question 4
+
+@for $i from 1 through 10 {
+  .font#{$i} {
+    font-weight: $i * 100;
+  }
+}
+
+
+// Question 5
+
+
+$teams: (
+  "Duke" #001a57,
+  "Gonzaga" #002855,
+  "Kansas" #0051ba,
+  "Baylor" #00543f
+);
+
+@each $team, $color in $teams {
+  .team-#{$team} {
+    color: $color;
+  }
+}
+
+// Question 6
+
+$seasons: (
+  "spring" "🌸",
+  "summer" "☀️",
+  "fall" "🍂",
+  "winter" "❄️"
+);
+
+@mixin season-glyph($season) {
+  @each $name, $glyph in $seasons {
+    @if $season == $name {
+      h1, h2, h3, h4, h5, h6 {
+        &::after {
+          content: $glyph;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+@include season-glyph("spring");
